@@ -1,0 +1,39 @@
+- Libraries needed
+    - JSON
+    - Spark
+    - SQLite
+
+- Create Database in JDBC (don't add any tables)
+
+- Database Creator Class
+    - Drop tables if necessary
+    - Add tables needed
+    
+    - Parse the XML files to find all necessary values
+    - Store the files inside the database tables
+
+- Web Service Server 
+    - Set up basic web service stuff
+    - createPage method using a get method to create necessary pages 
+
+- Web Service Client
+    - Return arraylist of objects
+    - Call createPage method here
+    - use URL I/O + JSON parsing to read the data and add necessary data to objects (then added to arraylist)
+
+- GUI (If wanted)
+    - Input Features
+    - Display Features
+    - Action Listener (Gets + displays data from returned arraylist - From Web Service Client)
+
+- Parser
+    - Returns JSON Array 
+    - Use SQL Query/Queries to get data from database
+    - Create JSON Objects using data and add to the JSON Array
+
+- Object Class 
+    - Store data you want to display 
+
+- Main 
+    - Makes use of Database Creator (Commented out so it isn't constantly recreating database)
+    - Launches GUI + Basic Web Service Functionality

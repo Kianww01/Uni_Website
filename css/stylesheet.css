@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+/* Reset Browser */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    background: lightgrey;
+}
+
+#mainContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px 5px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.book {
+    padding: 20px;
+    border: 10px #333;
+    border-style: solid;
+    height: 400px;
+    max-width: 850px;
+    color: black;
+}
+
+.cover {
+    float: left;
+    padding-right: 20px;
+}
+
+.book article {
+    height: 400px;
+    text-align: center;
+    font-family: sans-serif;
+    overflow: auto;
+}
+
+.book h3 {
+    font-size: 40px;
+}
+
+.bookDescription {
+    margin-top: 20px;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    padding: 10px;
+    padding-right: 40px;
+    max-width: 300px;
+}
+
+#pageBanner h1 {
+    margin-left: 200px;
+    font-size: 6em;
+    max-width: 2000px;
+}
+
+#pageBanner {
+    background-color: #6AA4A4;
+    height: 220px;
+    max-width: 2160px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    border: 2px solid black;
+    padding: 20px 40px 20px 40px;
+    background: darkgrey;
+    display: inline;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+li:hover {
+    font-size: 50px;
+}
+
+ul {
+    max-width: 1000px;
+    margin: 25px 0 10px 0;
+}
+
+h2 {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+body {
+    min-height: 400px;
+    margin-bottom: 100px;
+}
+
+footer {
+    background-color: grey;
+    font-size: 25px;
+    padding-left: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.zoom {
+    font-size: 15px;
+    padding: 12px 35px;
+    background-color: #03AFEE;
+    float: right;
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}
+
+.mastercardLogo {
+    padding: 10px 20px 0 20px;
+    max-width: 120px;
+}
+
+#formContainer {
+    padding: 10px 0 10px 20px;
+    margin-left: 10px;
+    border: 5px #333;
+    border-style: solid;
+    max-width: 350px;
+}
+
+#detailsBtn {
+    padding: 12px 24px;
+    margin-top: 10px;
+    background-color: #03AFEE;
+    transition: transform .2s;
+}
+
+#detailsBtn:hover {
+    transform: scale(1.5);
+}
+
+#successContainer {
+    padding: 10px 0 10px 20px;
+    margin-left: 10px;
+    border: 5px #333;
+    border-style: solid;
+    max-width: 650px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .logo {
+        height: 80%;
+        width: 25%;
+    }
+}
+
+@media (max-width: 800px) {
+    #pageBanner h1 {
+        font-size: 4.5em;
+    }
+    .logo {
+        height: 80%;
+        width: 35%;
+    }
+    #mainContainer {
+        width: 60%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    nav li {
+        display: block;
+    }
+}
+
+@media(max-width:600px) {
+    #pageBanner {
+        height: 180px;
+    }
+    .logo {
+        height: 80%;
+        width: 40%;
+        padding-right: 20px;
+    }
+    #pageBanner h1 {
+        font-size: 3em;
+        margin-left: 80px;
+        padding-top: 40px;
+    }
+    #successContainer {
+        display: block;
+        height: 120px;
+    }
+    .mastercardLogo {
+        padding-left: 0px;
+    }
+}
+
+@media(max-width:400px) {
+    #pageBanner h1 {
+        font-size: 2.2em;
+        padding-top: 40px;
+    }
+}
